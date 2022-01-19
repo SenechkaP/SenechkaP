@@ -44,26 +44,6 @@ void extract() {
     siftDown(0);
 }
 
-
-void minap(int i) {
-    for (i; i < times.size(); i++) {
-        if (i + 1 < times.size()) {
-            bool ifWas = false;
-            for (int j = i + 1; j < times.size(); j++) {
-                if (times[i].first + times[i].second == times[j].first) {
-                    ifWas = true;
-                }
-            }
-            if (ifWas == false) {
-                answ += 1;
-            }
-        }
-        else {
-            answ += 1;
-        }
-    }
-}
-
 int main()
 {
     int n;
@@ -78,7 +58,22 @@ int main()
     while (heap.size() > 0) {
         extract();
     }
-    minap(0);
+    for (int i = 0; i < times.size(); i++) {
+        if (i + 1 < times.size()) {
+            bool ifWas = false;
+            for (int j = i + 1; j < times.size(); j++) {
+                if (times[i].first + times[i].second <= times[j].first) {
+                    ifWas = true;
+                }
+            }
+            if (ifWas == false) {
+                answ += 1;
+            }
+        }
+        else {
+            answ += 1;
+        }
+    }
     cout << answ;
     return 0;
 }
