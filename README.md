@@ -2,7 +2,7 @@
 - 👀 I’m interested in IT
 - 🌱 I’m currently learning java and xml
 - 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me https://vk.com/senechkapadaltsyn
+- 📫 How to reach me (discord) senechka#1594
 
 <!---
 SenechkaP/SenechkaP is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
